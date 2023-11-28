@@ -1,0 +1,95 @@
+#task 1
+paragraph= input("enter paragarph:")
+def word_tokenization(word):
+    return word.split()
+def word_frequency(word):
+    split_word=word.split()
+    word freq={}
+    word freq=[]
+    for i in split_word:
+        wor_freq.append(split_word.count(i))
+    for j in range (len(word_freq)):
+        word_freq.update({split_word[j]:word_freq[j]})
+        return word_freq
+def word fequencies(text):
+    words=text.split()
+    word_freq ={}
+    for word in words:
+        if word in word_freq:
+            word_freq[word]+=1
+        else:
+                word_freq[word]=1
+    sorted_word_freq=sorted(word_freq.items(),key=lambda x:x[1],reverse=true)
+    for word ,freq in sorted_word_freq:
+        print(f"{word}:{freq}")
+def top_N_words(text,N):
+    word= text.split()
+    word count=counter(words)
+    top_N=word_count,most_common(n)
+    for word,count in top_N:
+        print(f"{word}:{count}")
+        text=input("enter the text:")
+        N=int(("enter the value of N:"))
+        top_N_words(text,N)
+def word_fequency(text,word):
+    words=text.split()
+    frquency=words.count(word)return frquency
+def main():
+    text=input("enter a text")
+    search_word=input("enter a word to search in the text:")
+    if the search_word in text:
+        freq=word_frequency(text,search_word)
+        print(f"the word'{search_word}'appear{freq}times in the text.")
+        else:
+            print(f"the word '{search_word}'is not found in the text.")
+#task 2
+def word_length(word_list):
+    word_len=[]
+    for i in range(len(word_list)):
+        word_len.append(len(word_list[i]))
+        return word_len
+def average_word_length(text):
+    words=text.split()
+    total_length=sum(len(word in words))
+    return total_length /len(words)
+    text=input("enter text")
+    avg_length=average_word_length(text)
+    print("average word length:",avg_length)
+def find_longest_shortest_word(text):
+    word=text.split()
+    longest_word=""
+    shortest_word=words[0]
+    for word in words:
+        if len(word)>len(longest_word):longest_word=word
+        if len(word)<len(shortest_word):shortest_word-word
+        print(f"the longest_word is'{longest_word}' with the length of{len(longest_word)}")
+        print(f"the shortest word is'{shortest_word}'with the length of{len(shortest_word)}")
+def count_word_frequency(text):
+    word_freq={}
+    words=text.split()
+    for word in word in words:
+        word_lengthlen(word)
+        if word in word_freq:
+            word_freq[word]+=1
+            else:
+                word_freq[word]=1
+
+        if word_length in word_freq:
+            word_freq[word_length]+=1
+            else:
+                word_freq[word_length]=1
+                return word_freq
+                result=count_word_frequency(text)
+                print(result)
+def word_length_distrbution(text):
+    word_list=text.split()
+    length_freq={}
+    for word in word_list:
+        length=len(word)
+        if length in length_freq:
+            length_freq[leght]+=1
+            else:
+                leght_freq[legth]=1
+    sorted_legth=sorted(length_freq.items(),key=lambda x:x[0])
+    for length,freq in sorted_leghts:
+        print(f"length:{length},frequency:{freq}")
